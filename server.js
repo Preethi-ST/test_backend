@@ -10,9 +10,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.get("/", (req, res) => {
+/* app.get("/", (req, res) => { ---------------------------- 1st change
   res.json({ message: "API running..." });
-});
+}); */
 
 app.use("/api/products", productRoutes);
 
